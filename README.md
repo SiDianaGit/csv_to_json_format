@@ -27,38 +27,44 @@ pip install -i https://pypi.org/simple/ csv-to-json-format
 ```
 
 
-# Exemplo de Código
+## Exemplo de Código
 
 Para usar o conversor, importe a função convert_csv_to_json de dentro do seu pacote e chame-a com os caminhos dos arquivos de entrada e saída.
 
-´´´bash
-Python
-
+´´´
 from convert_format.csv_to_json import csv_to_json
 ´´´
 
-# Defina os caminhos para o seu arquivo CSV de entrada e JSON de saída
+### Defina os caminhos para o seu arquivo CSV de entrada e JSON de saída
 input_csv = 'dados_de_exemplo.csv'
 output_json = 'dados_convertidos.json'
 
-# Chame a função para realizar a conversão
-´´´bash
+### Chame a função para realizar a conversão
+´´´
 csv_to_json.convert_csv_to_json(input_csv, output_json)
 ´´
-# Se a conversão for bem-sucedida, você verá uma mensagem de confirmação
-# "Conversão concluída! O arquivo JSON foi salvo em: dados_convertidos.json"
+ Se a conversão for bem-sucedida, você verá uma mensagem de confirmação
+ "Conversão concluída! O arquivo JSON foi salvo em: dados_convertidos.json"
 
-Exemplo de Arquivos
+### Exemplo de Arquivos
 Aqui está como um arquivo de entrada e saída se pareceriam.
 
-CSV de entrada (dados_de_exemplo.csv):
+
+#### CSV de entrada (dados_de_exemplo.csv):
 
 Fragmento do código
 
+
 nome;idade;cidade
+
 Ana;28;São Paulo
+
 Carlos;35;Rio de Janeiro
-JSON de saída (dados_convertidos.json):
+
+
+
+
+#### JSON de saída (dados_convertidos.json):
 
 JSON
 
@@ -75,7 +81,7 @@ JSON
     }
 ]
 
-Estrutura do Projeto
+### Estrutura do Projeto
 A estrutura de arquivos segue o padrão recomendado para pacotes Python, conforme a imagem de referência.
 
 csv_to_json_format/
