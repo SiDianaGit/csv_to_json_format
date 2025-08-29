@@ -1,7 +1,6 @@
 # csv_to_json_format
 A Python project to convert csv files (UTF-8) delimited by ";" to .json format
 
-
 # Conversor de CSV para JSON
 Uma ferramenta simples e eficiente para converter arquivos CSV, que utilizam ponto e vírgula como separador e são codificados em UTF-8, para o formato de dados JSON.
 
@@ -16,25 +15,36 @@ Este projeto foi criado como um template de pacote Python para demonstrar o proc
 
 Você pode instalar a biblioteca diretamente do PyPI (após sua publicação) usando `pip`:
 
-```bash
-pip install csv_converter_package
+Para testes:
+```
+pip install -i https://test.pypi.org/simple/ csv-to-json-format
+```
 
-Como Usar
+Para produção
+
+```bash
+pip install -i https://pypi.org/simple/ csv-to-json-format
+```
+
+
+# Exemplo de Código
+
 Para usar o conversor, importe a função convert_csv_to_json de dentro do seu pacote e chame-a com os caminhos dos arquivos de entrada e saída.
 
-Exemplo de Código
-
+´´´bash
 Python
 
-from csv_converter_package.module1_name.csv_to_json import convert_csv_to_json
+from convert_format.csv_to_json import csv_to_json
+´´´
 
 # Defina os caminhos para o seu arquivo CSV de entrada e JSON de saída
 input_csv = 'dados_de_exemplo.csv'
 output_json = 'dados_convertidos.json'
 
 # Chame a função para realizar a conversão
-convert_csv_to_json(input_csv, output_json)
-
+´´´bash
+csv_to_json.convert_csv_to_json(input_csv, output_json)
+´´
 # Se a conversão for bem-sucedida, você verá uma mensagem de confirmação
 # "Conversão concluída! O arquivo JSON foi salvo em: dados_convertidos.json"
 
@@ -68,16 +78,16 @@ JSON
 Estrutura do Projeto
 A estrutura de arquivos segue o padrão recomendado para pacotes Python, conforme a imagem de referência.
 
-project_name/
+csv_to_json_format/
 ├── README.md
 ├── setup.py
 ├── requirements.txt
-├── package_name/
+├── convert_format/
 │   ├── __init__.py
-│   ├── module1_name/
+│   ├── csv_to_json
 │   │   ├── __init__.py
 │   │   ├── csv_to_json.py
-│   └── module2_name/
+│   └── convert_main/
 │       ├── __init__.py
 │       └── main.py
 
